@@ -1,26 +1,26 @@
 /*
 Decrypts GPP Passwords.
 
-References: 
+References:
 https://github.com/leonteale/pentestpackage/blob/master/Gpprefdecrypt.py
 https://github.com/mattifestation/PowerSploit/blob/master/Exfiltration/Get-GPPPassword.ps1
 Chris Campbell (@obscuresec)
 
-Usage: 
+Usage:
 gppdecrypt.exe j1Uyj3Vx8TY9LtLZil2uAuZkFQA/4latT76ZwgdHdhw
 L o c a l * P 4 s s w o r d !
 */
 package main
 
 import (
-		"os"
-		"log"
-		"fmt"
-		"strings"
-		"encoding/base64"
-		"encoding/hex"
-		"crypto/aes"
-		"crypto/cipher"
+	"crypto/aes"
+	"crypto/cipher"
+	"encoding/base64"
+	"encoding/hex"
+	"fmt"
+	"log"
+	"os"
+	"strings"
 )
 
 func main() {
